@@ -29,6 +29,7 @@ def get_to_philosophy(starting_url, max_iters=50):
         if current_address in visited_links:
             stuck_counter += 1
             if stuck_counter == 10:
+                print('\nWe are stuck in a loop. How philosophical of us!')
                 print('\nThe \'Strange Loop\' phenomenon occurs whenever, by moving upwards (or downwards) through\n'
                       'the levels of a hierarchical system, we unexpectedly find ourselves back where we started.\n'
                       '- Douglas Hofstadter')
@@ -43,5 +44,6 @@ def get_to_philosophy(starting_url, max_iters=50):
 
 kermit = 'https://en.wikipedia.org/wiki/Kermit_the_Frog'
 dimitar = 'https://en.wikipedia.org/wiki/Dimitar'
+reality = 'https://en.wikipedia.org/wiki/Reality'
 
-get_to_philosophy(dimitar)
+get_to_philosophy(reality)
